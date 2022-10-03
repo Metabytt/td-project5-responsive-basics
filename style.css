@@ -1,0 +1,833 @@
+*{
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    overflow:auto;
+    margin: 0;
+    padding: 0;
+    max-width: 1400px;
+    list-style: none;
+    text-decoration: none;
+}
+
+p{
+    font-size: large;
+}
+
+h1{
+    font-weight: bolder;
+    font-size:xx-large;
+}
+
+h2{
+    color: blue;
+    font-weight: lighter;
+}
+
+h3{
+    color: blue;
+    font-weight: lighter;
+}
+
+
+/* Header */
+
+header .navbar{
+    display: flex;
+    background-color: blue;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    width: 100%;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 20px 20px 20px 100px;
+}
+
+div li{
+    list-style: none;
+    text-align: center;
+    padding:5px 10px;
+    transition-duration: .2s;
+}
+
+.navlinks{
+    margin: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    width: 200px;
+    height: 100px;
+}
+
+.navbar div li:hover{
+    border:solid white 2px
+}
+
+.hamburger{
+    display: none;
+}
+
+/*Hero*/
+
+.Hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
+    margin: 50px  50px 0 0;
+    max-width: 1400px;
+}
+.Hero1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 470px;
+    height:470px;
+    border-radius: 10px ;
+}
+
+.Hero1 img{
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow:  rgba(0, 0, 255, 0.5) 0px 5px 15px;
+}
+
+.Hero2{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    color: rgb(0, 0, 255);
+}
+
+.Hero2 div{
+    width:100%;
+    align-content: center;
+}
+
+.Hero div button{
+    width: 100px;
+    height: 40px;
+    color: blue;
+    border-radius:25px;
+    border: solid blue;
+    background-color: white;
+}
+
+button a{
+    color: blue;
+ }
+
+/*About Me*/
+
+.AboutMe{
+    display:flex;
+    flex-direction:row;
+    padding: 50px 100px;
+    margin-top: 50px;
+    background-color: blue;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    color: white;
+}
+
+.AboutMe h2{
+    text-align: center;
+    color: white;
+    flex-basis: 100%;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.details{
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.details2{
+    
+    width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; 
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+}
+
+.details2 img{
+    width: 400px;
+    height:350px;
+    box-shadow:  rgba(6, 6, 10, 0.5) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.details1{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    border-radius: 10px;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.details1 h4{
+    font-size: 25px;
+}
+
+#profile{
+    display: grid;
+    grid-template-columns:270px 270px; 
+    row-gap: 15px;
+    background-color: blue;
+    column-gap: 20px;
+    text-align:center;
+}
+
+#profile li{
+    font-size: 18px;
+    
+}
+
+#profile2{
+    display: none;
+}
+
+.AboutMe button{
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    border-radius:25px;
+    border: solid white;
+    color: white;
+}
+
+.AboutMe button a{
+    color: white;
+}
+
+.p{
+    display: none;
+}
+
+/*Portfolio*/
+
+.Portfolio{
+   padding: 50px 100px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   text-align: center;
+
+}
+.MyPort{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between ;
+    max-width: 1400px;
+    flex-wrap: wrap;
+}
+
+.Portfolio .but{
+    margin: 20px;
+}
+
+.Portfolio .but button{
+    width: 100px;
+    height: 40px;
+    color: blue;
+    background-color: white;
+    border: solid blue;
+    border-radius:50px;
+    margin: 0 20px;
+}
+
+.Portfolio .but button a{
+    color: blue;
+    text-decoration: none;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.images img{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow:  rgba(6, 6, 10, 0.5) 0px 5px 15px;
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px
+}
+
+.text{
+    margin: 7px;
+    color: blanchedalmond;
+}
+
+.text span{
+    color: white
+}
+
+.social img{
+    border-radius: 1000px;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+
+
+
+
+/* Media Query for tab*/
+
+@media screen and (max-width:1320px) {
+
+    .details1{
+        width: 55%;
+       flex-direction: row;
+    }
+
+    .details p{
+      
+        margin: 40px 0;
+    }
+
+    .AboutMe button{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:1288px) {
+
+    .details2{
+        width: 40%;
+ 
+    }
+
+    .details1{
+       flex-direction: column;
+       flex-wrap: wrap;
+       height: 500px;
+    }
+
+    .details1 p {
+        font-size:16px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .p{
+        display: none;
+    }
+
+    #profile2{
+        display: none;
+    }
+
+    #profile{
+        grid-template-columns:210px 210px; 
+        margin: 0;
+        height: 170px ;
+    }
+
+
+    #profile li{
+        font-size: 15px;  
+    }
+
+    .AboutMe button{
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width:1220px){
+
+   /*Portfolio*/
+
+   .images img{
+    width: 250px;
+    height:350px;
+   }
+
+}
+
+@media screen and (max-width:1170px) {
+
+    /*Hero*/
+
+   .Hero{
+    padding: 0 20px;
+    margin: 50px;
+   }
+
+   .Hero1{
+    padding-left: 20px;
+   }
+
+}
+
+@media screen and (max-width:1060px) {
+
+    /*Hero*/
+
+    .Hero{
+        flex-wrap: wrap;
+        height: 80%;
+        align-items: center;
+    }
+
+    .Hero1 {
+        width: 50%;
+        padding-left: 20px;
+        margin-right: 10px;
+    }
+  
+    .Hero2{
+        height: 100%;
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .details2 img{
+        margin-top: -20px;
+        height:70%;
+    }
+
+    #profile{
+        grid-template-columns:180px 180px; 
+        margin: -10px;
+        height: 170px ;
+    }
+
+    #profile li{
+        font-size: 14px;  
+    }
+
+    .AboutMe button{
+        margin-top: 5px;
+    }
+
+    /*Portfolio*/
+
+    .images img{
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:950px){
+
+    /*Header*/
+
+    .logo img{
+        margin: 20px 30px;
+    }
+
+    Header{
+        justify-content: space-around;
+    }
+
+    /*Hero*/
+
+    .Hero1 img{
+        height:70%;
+        width: 80%;
+    }
+
+
+    .Hero2{
+        height: 100%;
+        width: 40%;
+        margin-right: 10px;
+    }
+
+
+    .Hero{
+        margin: 10px;
+        height: auto;
+        padding: 20px 0;
+        background-color: white;
+    }
+
+    .AboutMe{
+        padding: 40px 70px 40px 70px;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+        height:400px;
+        padding: 0;
+    }
+
+    .details1{
+        display: flex;
+        flex-direction: column;
+        width: 53%;
+        justify-content: center;
+        height: 400px;
+        flex-wrap: wrap;
+    }
+
+    .details1 p{
+        display: none;
+    }
+    
+    .details h4{
+        font-size: 20px;
+    }
+
+    .details .p{
+        display: block;
+        font-size:16px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .details1 button{
+        margin: 0;
+    }
+
+    
+    .details2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        margin-top: -20px;
+        height:70%;
+    }
+
+    .details2 img{
+        height: 95%;
+    }
+
+
+    #profile{
+        grid-template-columns:152px 152px;
+        text-align: center; 
+        row-gap: 2px;
+        column-gap: 0px;
+        height: 150px ;
+        margin-top: 0;
+    }
+
+
+    #profile li{
+        font-size: 14px;  
+    }
+
+    /*Portfolio*/
+
+    .Portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .MyPort .but button{
+        margin: 5px 10px;
+    }
+
+
+    .MyPort img{
+        width: 30%;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width:725px) {
+
+    /*header*/
+
+    .navlinks{
+        display: none;
+    }
+    
+    
+    .hamburger{
+      display: block;
+      margin: 30px;
+    }
+
+
+    div .line{
+      background-color: white;
+      width: 50px;
+      height: 5px;
+      margin: 5px ;
+    }
+
+    .logo img{
+      margin: 20px 30px;
+    }
+
+    .Hero2{
+      width: 40%;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    .Hero2 div button{
+      width: 45%;
+      height: 30px
+    }
+
+    .Hero1{
+      height: 100%;
+      width: 50%;
+    }
+
+    .Hero1 img{
+      height:70%;
+      width: 80%;
+    }
+
+    .Hero h3{
+      display: none;
+    }
+
+    #profile{
+      display: none;
+    }
+    .AboutMe{
+        margin-top: 20px;
+        height: 100%;
+        padding: 70px 10px 20px 10px;
+        justify-content: center;
+    }
+
+    .details{
+        border: solid 5px;
+        height: 500px;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 0;
+        width:70%
+    }
+
+    .details2{
+        display: none;
+    }
+
+    .details1{
+        height: 500px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .details1 h4{
+        font-size: 20px;
+        margin: 5px 0 0 0;
+    }
+
+    .details1 p{
+        display: none;
+        
+    }
+
+    .details1 .p{
+        font-size: 18px;
+        margin: 0;
+        
+    }
+    
+
+    #profile2{
+        display: grid;
+        grid-template-columns:170px 170px; 
+        row-gap: 5px;
+        column-gap: 5px;
+        text-align:center;
+        height: 200px;
+        width: 90%;
+        padding: 0;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #profile2 li{
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+        
+    }
+
+    #profile{
+        display: none;
+    }
+
+
+
+}
+
+
+/* Media Query for mobile*/
+
+@media(max-width:670px){
+
+    .Hero{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Hero1{
+        margin-top:30px ;
+        width: 70%;
+    }
+
+    .Hero img{
+        margin-top: 20px;
+        width:95%;
+    }
+    .Hero h3{
+        display: none;
+    }
+    
+    .Hero2 div button{
+        margin-top:5px ;
+        width: 70%;
+        height: 30px
+    }
+
+    .AboutMe{
+        margin-top: 20px;
+        height: 100%;
+        padding: 70px 10px 20px 10px;
+        justify-content: center;
+    }
+
+    .details{
+        border: solid 5px;
+        height: 500px;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 0;
+        width:70%
+    }
+
+    .details2{
+        display: none;
+    }
+
+    .details1{
+        height: 500px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .details1 h4{
+        font-size: 20px;
+        margin: 5px 0 0 0;
+    }
+
+    .details1 p{
+        display: none;
+        
+    }
+
+    .details1 .p{
+        font-size: 18px;
+        margin: 0;
+        
+    }
+    
+
+    #profile2{
+        display: grid;
+        grid-template-columns:150px 150px; 
+        row-gap: 5px;
+        column-gap: 5px;
+        text-align:center;
+        height: 200px;
+        width: 90%;
+        padding: 0;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #profile2 li{
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+        
+    }
+
+    #profile{
+        display: none;
+    }
+
+    /*Portfolio*/
+    
+ .MyPort{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .MyPort .images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    flex-wrap: wrap;
+    
+ }
+
+ .images img{
+    width: 100%;
+    margin: 15px 0;
+ }
+
+ /*footer*/
+
+ marquee{
+    width: 100%;
+ }
+
+}
